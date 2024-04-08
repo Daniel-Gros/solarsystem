@@ -13,6 +13,35 @@
   margin-left: calc(50vw - 100px);
 }
 
+.satellite, .satellite--deimos, .satellite--phobos, .satellite--moon {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+}
+.satellite--moon {
+  background-color: grey;
+  animation: animation-rotate 5s linear infinite;
+}
+.satellite--phobos {
+  background-color: white;
+}
+.satellite--deimos {
+  background-color: orange;
+}
+
+@keyframes animation-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .planet {
   width: 150px;
   height: 150px;
@@ -40,6 +69,15 @@
   border-radius: 100%;
   background-color: lightblue;
   flex-shrink: 0;
+  position: relative;
+}
+.planet--mars {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: red;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .sun {
