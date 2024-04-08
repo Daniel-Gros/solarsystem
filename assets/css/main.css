@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.planet {
+  background-color: red;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+.planet--mercury {
+  width: 38.4615384615px;
+  height: 38.4615384615px;
+  background-color: yellow;
+}
+.planet--venus {
+  width: 90.9090909091px;
+  height: 90.9090909091px;
+  background-color: purple;
+}
+.planet--earth {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=main.css.map */
