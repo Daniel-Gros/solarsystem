@@ -4,23 +4,33 @@
 }
 
 .planet {
-  background-color: red;
-  border-radius: 100%;
   width: 150px;
   height: 150px;
+  border-radius: 100%;
+  background-color: grey;
 }
 .planet--mercury {
   width: 38.4615384615px;
   height: 38.4615384615px;
+  border-radius: 100%;
   background-color: yellow;
 }
 .planet--venus {
   width: 90.9090909091px;
   height: 90.9090909091px;
+  border-radius: 100%;
   background-color: purple;
 }
 .planet--earth {
-  background-color: blue;
   width: 100px;
   height: 100px;
+  border-radius: 100%;
+  background-color: lightblue;
+}
+
+.sun {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: orange;
 }/*# sourceMappingURL=main.css.map */
