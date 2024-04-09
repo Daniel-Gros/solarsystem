@@ -1,11 +1,11 @@
 @use "./_variables.sass" as var
 @use "sass:math"
 
-@mixin circle($diameter, $color: grey)
+@mixin circle($diameter, $url: '')
+    border-radius: 100%
     width: $diameter
     height: $diameter
-    border-radius: 100%
-    background-color: $color
+    background-image: url($url)
     flex-shrink: 0
 
 @mixin rotate-around-planet($duration: 5s, $planet-size)
@@ -16,6 +16,6 @@
 
 @mixin rotate-around-sun($distance-to-sun, $planet-size, $duration: 10s)
     $center-x: -1 * ($distance-to-sun + math.div(var.$sun-size, 2))
-    $center-y: math.div($planet-size, 2)
+    $center-y: calc(math.div($planet-size, 2))
     transform-origin: $center-x $center-y
     animation: animation-rotate $duration linear infinite
