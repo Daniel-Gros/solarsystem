@@ -19,3 +19,9 @@
     $center-y: calc(math.div($planet-size, 2))
     transform-origin: $center-x $center-y
     animation: animation-rotate $duration linear infinite
+
+@mixin responsive-earth-size($earth-size)
+    @media screen and (max-width: 600px)
+        width: $earth-size
+        height: $earth-size
+        
